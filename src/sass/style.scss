@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+//* Global *//
+* {
+    padding: 0;
+    margin: 0;
+}
+
+//* Colors *//
+
+//**** Primary ****//
+
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+//**** Neutral ****//
+
+$veryDarkBlue: hsl(234, 12%, 34%);
+$grayishBlue: hsl(229, 6%, 66%);
+$veryLightGray: hsl(0, 0%, 98%);
+
+//* Tipografia *//
+h1 {
+    font-size: 3em;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+
+h4 {
+    font-size: 1.5em;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+p {
+    font-size: 1.1em;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.tittle {
+    font-weight: 200;
+}
+
+.text {
+    width: 50%;
+}
+
+//* Layout *//
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100vh;
+}
+
+.card {
+    height: 15em;
+    border: none;
+    border-top: 5px solid;
+    border-radius: 5px;
+    background-color: white;
+    & p {
+        font-size: 1em;
+    }
+}
+
+#card-sup {
+    border-color: $cyan;
+}
+
+#card-team {
+    border-color: $red;
+}
+
+#card-karma {
+    border-color: $orange;
+}
+
+#card-calc {
+    border-color: $blue;
+}
+
+.img-card {
+    width: 72px;
+    margin: auto 0 0 auto;
+}
+
+//* Footer *//
+.attribution { 
+    font-size: 1em; 
+    text-align: center; 
+    & a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+@media (max-width: 992px) {
+    
+    .container {
+        height: 100%;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2em;
+        font-weight: 600;
+        opacity: 0.8;
+    }
+    
+    p {
+        font-size: 1em;
+        font-weight: 400;
+        opacity: 0.5;
+    }
+
+}
